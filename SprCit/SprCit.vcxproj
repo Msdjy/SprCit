@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SC_BUILD_DLL;SC_PLATFORM_WINDOWS;SC_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SC_BUILD_DLL;SC_PLATFORM_WINDOWS;SC_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -125,7 +125,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SC_BUILD_DLL;SC_PLATFORM_WINDOWS;SC_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -147,9 +147,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\SprCit.h" />
-    <ClInclude Include="src\SprCit\APPLICATION.H" />
+    <ClInclude Include="src\SprCit\Application.h" />
     <ClInclude Include="src\SprCit\Core.h" />
     <ClInclude Include="src\SprCit\EntryPoint.h" />
+    <ClInclude Include="src\SprCit\Event\ApplicationEvent.h" />
+    <ClInclude Include="src\SprCit\Event\Event.h" />
+    <ClInclude Include="src\SprCit\Event\KeyEvent.h" />
+    <ClInclude Include="src\SprCit\Event\MouseEvent.h" />
     <ClInclude Include="src\SprCit\Log.h" />
   </ItemGroup>
   <ItemGroup>

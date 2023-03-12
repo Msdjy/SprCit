@@ -4,6 +4,7 @@
 
 #include "Core.h"
 #include"spdlog/spdlog.h"
+#include"spdlog/fmt/ostr.h"
 
 namespace SprCit {
 	class SPRCIT_API Log
