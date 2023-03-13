@@ -12,6 +12,8 @@
 #include<unordered_map>
 #include<unordered_set>
 
+#include "SprCit/Log.h"
+
 
 #ifdef SC_PLATFORM_WINDOWS
 	#include<Windows.h>
