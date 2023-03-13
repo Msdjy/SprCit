@@ -1,3 +1,6 @@
 [submodule "SprCit/vendor/spdlog"]
 	path = SprCit/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "SprCit/vendor/GLFW"]
+	path = SprCit/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
