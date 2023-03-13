@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include<sstream>
-
 namespace SprCit {
 
 	class SPRCIT_API KeyEvent : public Event

@@ -2,7 +2,6 @@
 
 // For use by SprCit application
 
-#include<stdio.h>
 #include"SprCit/Application.h"
 #include"SprCit/Log.h"
 

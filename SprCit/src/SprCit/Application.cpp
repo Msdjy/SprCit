@@ -1,3 +1,4 @@
+#include"scpch.h"
 #include "Application.h"
 
 #include "SprCit/Event/ApplicationEvent.h"

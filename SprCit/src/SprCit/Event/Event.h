@@ -1,9 +1,7 @@
 #pragma once
 
+#include "scpch.h"
 #include "SprCit/Core.h"
-
-#include<string>
-#include<functional>
 
 namespace SprCit {
 

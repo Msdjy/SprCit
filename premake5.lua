@@ -18,6 +18,9 @@ project "SprCit"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "scpch.h"
+	pchsource "SprCit/src/scpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
