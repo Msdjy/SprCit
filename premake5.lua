@@ -14,7 +14,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "SprCit/vendor/GLFW/include"
 
-include "Spr Cit/vendor/GLFW"
+include "SprCit/vendor/GLFW"
 
 project "SprCit"
 	location "SprCit"	
@@ -64,14 +64,17 @@ project "SprCit"
 
 	filter "configurations:Debug"
 		defines "SC_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SC_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "SC_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 
@@ -112,14 +115,17 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "SC_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "SC_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "SC_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 

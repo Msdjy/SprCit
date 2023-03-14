@@ -4,6 +4,7 @@
 
 #include"SprCit/Application.h"
 #include"SprCit/Log.h"
+#include"SprCit/Layer.h"
 
 
 // ---Entry Point-------------------

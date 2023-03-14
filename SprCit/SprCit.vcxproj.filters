@@ -11,7 +11,7 @@
       <UniqueIdentifier>{9A97A5D1-8639-D0A7-6FF4-E3FB5B3557F8}</UniqueIdentifier>
     </Filter>
     <Filter Include="SprCit\Events">
-      <UniqueIdentifier>{6BE48814-5747-18B9-00CD-506FEC0EE43B}</UniqueIdentifier>
+      <UniqueIdentifier>{3E72A5A5-AA32-21DC-736D-6A59DFEC65B8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +40,12 @@
     <ClInclude Include="src\SprCit\Events\MouseEvent.h">
       <Filter>SprCit\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\SprCit\Layer.h">
+      <Filter>SprCit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SprCit\LayerStack.h">
+      <Filter>SprCit</Filter>
+    </ClInclude>
     <ClInclude Include="src\SprCit\Log.h">
       <Filter>SprCit</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\SprCit\Application.cpp">
+      <Filter>SprCit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SprCit\Layer.cpp">
+      <Filter>SprCit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SprCit\LayerStack.cpp">
       <Filter>SprCit</Filter>
     </ClCompile>
     <ClCompile Include="src\SprCit\Log.cpp">
