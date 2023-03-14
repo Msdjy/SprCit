@@ -3,7 +3,7 @@
 #include "scpch.h"
 
 #include"Core.h"
-#include"Event/Event.h"
+#include"Events/Event.h"
 
 namespace SprCit {
 

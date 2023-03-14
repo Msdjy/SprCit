@@ -10,7 +10,7 @@
     <Filter Include="SprCit">
       <UniqueIdentifier>{9A97A5D1-8639-D0A7-6FF4-E3FB5B3557F8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="SprCit\Event">
+    <Filter Include="SprCit\Events">
       <UniqueIdentifier>{6BE48814-5747-18B9-00CD-506FEC0EE43B}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -28,17 +28,17 @@
     <ClInclude Include="src\SprCit\EntryPoint.h">
       <Filter>SprCit</Filter>
     </ClInclude>
-    <ClInclude Include="src\SprCit\Event\ApplicationEvent.h">
-      <Filter>SprCit\Event</Filter>
+    <ClInclude Include="src\SprCit\Events\ApplicationEvent.h">
+      <Filter>SprCit\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\SprCit\Event\Event.h">
-      <Filter>SprCit\Event</Filter>
+    <ClInclude Include="src\SprCit\Events\Event.h">
+      <Filter>SprCit\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\SprCit\Event\KeyEvent.h">
-      <Filter>SprCit\Event</Filter>
+    <ClInclude Include="src\SprCit\Events\KeyEvent.h">
+      <Filter>SprCit\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\SprCit\Event\MouseEvent.h">
-      <Filter>SprCit\Event</Filter>
+    <ClInclude Include="src\SprCit\Events\MouseEvent.h">
+      <Filter>SprCit\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\SprCit\Log.h">
       <Filter>SprCit</Filter>

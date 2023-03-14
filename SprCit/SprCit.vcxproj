@@ -157,10 +157,10 @@
     <ClInclude Include="src\SprCit\Application.h" />
     <ClInclude Include="src\SprCit\Core.h" />
     <ClInclude Include="src\SprCit\EntryPoint.h" />
-    <ClInclude Include="src\SprCit\Event\ApplicationEvent.h" />
-    <ClInclude Include="src\SprCit\Event\Event.h" />
-    <ClInclude Include="src\SprCit\Event\KeyEvent.h" />
-    <ClInclude Include="src\SprCit\Event\MouseEvent.h" />
+    <ClInclude Include="src\SprCit\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\SprCit\Events\Event.h" />
+    <ClInclude Include="src\SprCit\Events\KeyEvent.h" />
+    <ClInclude Include="src\SprCit\Events\MouseEvent.h" />
     <ClInclude Include="src\SprCit\Log.h" />
     <ClInclude Include="src\SprCit\Window.h" />
     <ClInclude Include="src\scpch.h" />
