@@ -8,6 +8,8 @@ workspace "SprCit"
 		"Dist"
 	}
 
+	startproject "Sandbox"
+
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder (solution directory)
@@ -20,7 +22,7 @@ include "SprCit/vendor/GLFW"
 include "SprCit/vendor/Glad"
 include "SprCit/vendor/imgui"
 
-startproject "Sandbox"
+
 
 project "SprCit"
 	location "SprCit"	
