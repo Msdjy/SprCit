@@ -25,6 +25,7 @@ class Sandbox : public SprCit::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new SprCit::ImGuiLayer());
 	}
 	~Sandbox() {
 

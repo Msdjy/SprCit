@@ -4,6 +4,9 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
@@ -13,8 +16,14 @@
     <Filter Include="SprCit\Events">
       <UniqueIdentifier>{3E72A5A5-AA32-21DC-736D-6A59DFEC65B8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SprCit\ImGui">
+      <UniqueIdentifier>{44D8CB14-303B-5BB9-D9C0-936FC502273C}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -40,6 +49,9 @@
     <ClInclude Include="src\SprCit\Events\MouseEvent.h">
       <Filter>SprCit\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\SprCit\ImGui\ImGuiLayer.h">
+      <Filter>SprCit\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\SprCit\Layer.h">
       <Filter>SprCit</Filter>
     </ClInclude>
@@ -55,11 +67,17 @@
     <ClInclude Include="src\scpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\SprCit\Application.cpp">
       <Filter>SprCit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SprCit\ImGui\ImGuiLayer.cpp">
+      <Filter>SprCit\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\SprCit\Layer.cpp">
       <Filter>SprCit</Filter>
