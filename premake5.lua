@@ -20,6 +20,8 @@ include "SprCit/vendor/GLFW"
 include "SprCit/vendor/Glad"
 include "SprCit/vendor/imgui"
 
+startproject "Sandbox"
+
 project "SprCit"
 	location "SprCit"	
 	kind "SharedLib"
