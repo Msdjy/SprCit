@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "SprCit/vendor/GLFW/include"
+IncludeDir["Glad"] = "SprCit/vendor/Glad/include"
 
 include "SprCit/vendor/GLFW"
+include "SprCit/vendor/Glad"
 
 project "SprCit"
 	location "SprCit"	
@@ -37,12 +39,14 @@ project "SprCit"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "SprCit"
 		defines
 		{
 			"SC_BUILD_DLL",
-			"SC_PLATFORM_WINDOWS"
+			"SC_PLATFORM_WINDOWS",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
