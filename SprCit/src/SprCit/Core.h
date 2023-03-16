@@ -11,6 +11,10 @@
 	#error SprCit only support Windows!
 #endif // SC_PLATFORM_WINDOWS
 
+#ifdef SC_DEBUG
+	#define SC_ENABLE_ASSERTS
+#endif
+
 #ifdef SC_ENABLE_ASSERTS
 #define SC_ASSERT(x, ...) { if(!(x)) { SC_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
 #define SC_CORE_ASSERT(x, ...) { if(!(x)) { SC_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
