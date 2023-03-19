@@ -17,6 +17,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "SprCit/vendor/GLFW/include"
 IncludeDir["Glad"] = "SprCit/vendor/Glad/include"
 IncludeDir["ImGui"] = "SprCit/vendor/imgui"
+IncludeDir["glm"] = "SprCit/vendor/glm"
 
 include "SprCit/vendor/GLFW"
 include "SprCit/vendor/Glad"
@@ -39,7 +40,9 @@ project "SprCit"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl",
 	}
 
 	includedirs
@@ -48,7 +51,8 @@ project "SprCit"
 		"%{prj.name}/vendor/spdlog/include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
-		"%{IncludeDir.ImGui}"
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links
@@ -109,7 +113,8 @@ project "Sandbox"
 	includedirs
 	{
 		"SprCit/vendor/spdlog/include",
-		"SprCit/src"
+		"SprCit/src",
+		"%{IncludeDir.glm}"
 	}
 
 	links
