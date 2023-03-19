@@ -11,12 +11,21 @@ public:
 
 	void OnUpdate() override
 	{
-		SC_INFO("ExampleLayer::Update");
+		//SC_INFO("ExampleLayer::Update");
+		if (SprCit::Input::IsKeyPressed(SC_KEY_TAB))
+			SC_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(SprCit::Event& event) override
 	{
-		SC_TRACE("{0}", event);
+		//SC_TRACE("{0}", event);
+		//if (event.GetEventType() == SprCit::EventType::KeyPressed)
+		//{
+		//	SprCit::KeyPressedEvent& e = (SprCit::KeyPressedEvent&)event;
+		//	if (e.GetKeyCode() == SC_KEY_TAB)
+		//		SC_TRACE("Tab key is pressed (event)!");
+		//	SC_TRACE("{0}", (char)e.GetKeyCode());
+		//}
 	}
 };
 

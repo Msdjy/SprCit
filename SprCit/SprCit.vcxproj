@@ -165,9 +165,11 @@
     <ClInclude Include="src\SprCit\Events\MouseEvent.h" />
     <ClInclude Include="src\SprCit\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\SprCit\Input.h" />
+    <ClInclude Include="src\SprCit\KeyCodes.h" />
     <ClInclude Include="src\SprCit\Layer.h" />
     <ClInclude Include="src\SprCit\LayerStack.h" />
     <ClInclude Include="src\SprCit\Log.h" />
+    <ClInclude Include="src\SprCit\MouseButtonCodes.h" />
     <ClInclude Include="src\SprCit\Window.h" />
     <ClInclude Include="src\scpch.h" />
   </ItemGroup>
