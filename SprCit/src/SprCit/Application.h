@@ -7,7 +7,7 @@
 #include "Events/Event.h"
 #include "SprCit/Events/ApplicationEvent.h"
 
-
+#include "SprCit/ImGui/ImGuiLayer.h"
 
 namespace SprCit {
 
@@ -31,8 +31,9 @@ namespace SprCit {
 		inline static Application& Get() { return *s_Instance; }
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
-
+		ImGuiLayer* m_ImGuiLayer;
 		std::unique_ptr<Window> m_Window;
+
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

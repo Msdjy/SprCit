@@ -114,6 +114,7 @@ project "Sandbox"
 	{
 		"SprCit/vendor/spdlog/include",
 		"SprCit/src",
+		"SprCit/vendor",
 		"%{IncludeDir.glm}"
 	}
 
